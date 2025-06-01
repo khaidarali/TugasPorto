@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio - Portofolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio - Muhammad Khaidar Ali</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header role="banner">
+  <div class="bg-particles" id="particles"></div>
+
+  <header role="banner" class="fade-in">
     <h1>PORTOFOLIO</h1>
-    <p class="bio">Mahasiswa Program Studi S1 Sistem Informasi di Fakultas Teknologi Informasi, Universitas Merdeka Malang.</p>
+    <p class="bio">Mahasiswa Program Studi S1 Sistem Informasi di Fakultas Teknologi Informasi, Universitas Merdeka
+      Malang.</p>
   </header>
 
-  <nav role="navigation" aria-label="Primary navigation">
+  <nav role="navigation" aria-label="Primary navigation" class="fade-in">
     <a href="#profile" class="nav-link active">Profil</a>
     <a href="#projects" class="nav-link">Proyek</a>
     <a href="#skills" class="nav-link">Keahlian</a>
@@ -20,67 +27,94 @@
   </nav>
 
   <main class="container" role="main">
-    <section id="profile" tabindex="-1" aria-label="Profil Personal">
+    <section id="profile" tabindex="-1" aria-label="Profil Personal" class="glass-container">
       <div class="profile">
-        <img src="assets/image/fotogaya.jpg" alt="Foto saya" />
+        <div class="profile-image-container">
+          <img src="assets/image/fotogaya.jpg" alt="Foto Muhammad Khaidar Ali" />
+        </div>
         <div class="profile-info">
           <h2>Muhammad Khaidar Ali</h2>
-          <p>Halo! Saya mahasiswa Program Studi S1 Sistem Informasi di Fakultas Teknologi Informasi, Universitas Merdeka Malang. Memiliki ketertarikan dalam pengembangan web, basis data, dan teknologi informasi.
-             Aktif mengembangkan berbagai proyek berbasis digital dan terus belajar untuk meningkatkan keterampilan di bidang IT.</p>
+          <p>Halo! Saya mahasiswa Program Studi S1 Sistem Informasi di Fakultas Teknologi Informasi, Universitas Merdeka
+            Malang. Memiliki ketertarikan dalam pengembangan web, basis data, dan teknologi informasi.
+            Aktif mengembangkan berbagai proyek berbasis digital dan terus belajar untuk meningkatkan keterampilan di
+            bidang IT.</p>
         </div>
       </div>
     </section>
 
-    <section id="projects" tabindex="-1" aria-label="Daftar Proyek">
+    <section id="projects" tabindex="-1" aria-label="Daftar Proyek" class="glass-container">
       <h2>Proyek Saya</h2>
       <div class="projects-grid">
         <article class="project-card" tabindex="0" aria-labelledby="proj-1-title">
           <h3 id="proj-1-title">Website Toko Online</h3>
-          <p class="description">Sebuah website e-commerce lengkap dengan fitur katalog produk, keranjang belanja, dan sistem checkout.</p>
+          <p class="description">Sebuah website e-commerce lengkap dengan fitur katalog produk, keranjang belanja, dan
+            sistem checkout yang terintegrasi dengan payment gateway.</p>
           <ul class="tech-list" aria-label="Teknologi yang digunakan">
-            
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>MySQL</li>
           </ul>
         </article>
         <article class="project-card" tabindex="0" aria-labelledby="proj-2-title">
           <h3 id="proj-2-title">Blog Pribadi</h3>
-          <p class="description">Platform blogging dengan fitur posting artikel, komentar, dan tema responsif yang modern.</p>
+          <p class="description">Platform blogging dengan fitur posting artikel, komentar, dan tema responsif yang
+            modern dengan dashboard admin yang user-friendly.</p>
           <ul class="tech-list" aria-label="Teknologi yang digunakan">
-            
+            <li>React</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+            <li>Express</li>
           </ul>
         </article>
         <article class="project-card" tabindex="0" aria-labelledby="proj-3-title">
           <h3 id="proj-3-title">Dashboard Monitoring</h3>
-          <p class="description">Aplikasi dashboard interaktif untuk memonitor data real-time menggunakan grafik dan tabel.</p>
+          <p class="description">Aplikasi dashboard interaktif untuk memonitor data real-time menggunakan grafik dan
+            tabel dengan visualisasi data yang menarik.</p>
           <ul class="tech-list" aria-label="Teknologi yang digunakan">
-            
+            <li>Vue.js</li>
+            <li>Chart.js</li>
+            <li>Laravel</li>
+            <li>PostgreSQL</li>
           </ul>
         </article>
       </div>
     </section>
 
-    <section id="skills" tabindex="-1" aria-label="Keahlian">
+    <section id="skills" tabindex="-1" aria-label="Keahlian" class="glass-container">
       <h2>Keahlian Saya</h2>
       <ul class="skills-list" aria-label="Daftar keahlian">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-       
+        <li><i class="fab fa-html5"></i> HTML5</li>
+        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+        <li><i class="fab fa-js-square"></i> JavaScript</li>
+        <li><i class="fab fa-php"></i> PHP</li>
+        <li><i class="fab fa-python"></i> Python</li>
+        <li><i class="fab fa-react"></i> React</li>
+        <li><i class="fas fa-database"></i> MySQL</li>
+        <li><i class="fab fa-git-alt"></i> Git</li>
       </ul>
     </section>
 
-    <section id="contact" tabindex="-1" aria-label="Informasi Kontak">
+    <section id="contact" tabindex="-1" aria-label="Informasi Kontak" class="glass-container">
       <h2>Kontak</h2>
       <ul class="contact-list">
         <li>
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 8V7l-3 2-2-1-5 5a11.72 11.72 0 01-4-4l5-5-1-2-3 3h-1a2 2 0 00-2 2v9a2 2 0 002 2h9a2 2 0 002-2v-1l3-3z"/></svg>
+          <i class="fas fa-envelope" aria-hidden="true"></i>
           Email: <a href="mailto:khaidarali209@gmail.com" target="_blank" rel="noopener">khaidarali209@gmail.com</a>
         </li>
         <li>
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12a9.99 9.99 0 001.6 5.5l-1.6 1.8 4.2-1.1A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+          <i class="fas fa-phone" aria-hidden="true"></i>
           Telepon: <a href="tel:+6285859168197" target="_blank" rel="noopener">+6285859168197</a>
         </li>
         <li>
-          
+          <i class="fab fa-github" aria-hidden="true"></i>
+          GitHub: <a href="https://github.com/khaidarali" target="_blank" rel="noopener">github.com/khaidarali</a>
+        </li>
+        <li>
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+          LinkedIn: <a href="https://linkedin.com/in/khaidarali" target="_blank"
+            rel="noopener">linkedin.com/in/khaidarali</a>
         </li>
       </ul>
     </section>
@@ -90,7 +124,7 @@
     &copy; 2025 Muhammad Khaidar Ali. All Rights Reserved.
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
-</html>
 
+</html>
